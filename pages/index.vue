@@ -10,18 +10,10 @@
     <h1>{{ $t('welcome') }}</h1>
 
     <section class="form">
-      <ETextField
-        v-model:modelValue="form.name"
-        :label="$t('form.name')"
-        :placeholder="$t('form.namePlaceholder')"
-        :error="errors.name"
-      />
-      <ETextField
-        v-model:modelValue="form.email"
-        :label="$t('form.email')"
-        :placeholder="safeT('form.emailPlaceholder', 'you@example.com')"
-        :error="errors.email"
-      />
+      <ETextField v-model:modelValue="form.name" :label="$t('form.name')" :placeholder="$t('form.namePlaceholder')"
+        :error="errors.name" />
+      <ETextField v-model:modelValue="form.email" :label="$t('form.email')"
+        :placeholder="safeT('form.emailPlaceholder', 'you@example.com')" :error="errors.email" />
       <div class="actions">
         <EBtn color="primary" @click="onSubmit">{{
           editId ? $t('action.update') : $t('action.create')
@@ -53,6 +45,12 @@
         <EBtn color="error" @click="onDialogConfirm">{{ $t('action.confirm') }}</EBtn>
       </div>
     </dialog>
+    <footer class="footer">
+      <small>
+        &copy; 2025 hardanonymous &nbsp;|&nbsp; 聯絡方式：<a href="mailto:hard25670559@gmail.com">hard25670559@gmail.com</a>
+        &nbsp;|&nbsp; <a href="https://github.com/hard25670559" target="_blank" rel="noopener">GitHub</a>
+      </small>
+    </footer>
   </div>
 </template>
 
@@ -230,5 +228,12 @@ dialog {
   position: absolute;
   right: 1rem;
   top: 1rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
 }
 </style>
