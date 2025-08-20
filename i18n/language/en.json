@@ -1,4 +1,35 @@
 {
   "welcome": "Welcome",
-  "test": "Test"
+  "test": "Test",
+  "form": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you{'@'}example.com"
+  },
+  "action": {
+    "create": "Create",
+    "update": "Update",
+    "reset": "Reset",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "users": {
+    "title": "Users"
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "invalidEmail": "Invalid email"
+  },
+  "dialog": {
+    "confirmCreate": "Confirm create?",
+    "confirmUpdate": "Confirm update?",
+    "confirmDelete": "Confirm delete {name}?"
+  },
+  "languages": {
+    "tw": "繁體中文",
+    "en": "English"
+  }
 }

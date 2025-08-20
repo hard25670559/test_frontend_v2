@@ -1,4 +1,35 @@
 {
   "welcome": "歡迎",
-  "test": "測試"
+  "test": "測試",
+  "form": {
+    "name": "姓名",
+    "namePlaceholder": "您的姓名",
+    "email": "電子郵件",
+    "emailPlaceholder": "you{'@'}example.com"
+  },
+  "action": {
+    "create": "建立",
+    "update": "更新",
+    "reset": "重設",
+    "edit": "編輯",
+    "delete": "刪除",
+    "cancel": "取消",
+    "confirm": "確認"
+  },
+  "users": {
+    "title": "使用者"
+  },
+  "validation": {
+    "nameRequired": "請輸入姓名",
+    "invalidEmail": "電子郵件格式不正確"
+  },
+  "dialog": {
+    "confirmCreate": "確認建立？",
+    "confirmUpdate": "確認更新？",
+    "confirmDelete": "確認刪除 {name}？"
+  },
+  "languages": {
+    "tw": "繁體中文",
+    "en": "English"
+  }
 }
