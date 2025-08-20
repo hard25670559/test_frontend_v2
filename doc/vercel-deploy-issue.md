@@ -48,8 +48,8 @@ Nuxt 3 應用部署到 Vercel 的需求與注意事項
         - 回到 GitHub repo，進入 Settings → Secrets → Actions，新增一個名為 `VERCEL_TOKEN` 的 secret，把剛剛複製的 token 貼上。
      3. 在 workflow 加入部署步驟：
         ```yaml
-        - name: Deploy to Vercel
-          run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+            - name: Deploy to Vercel
+               run: npx vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
         ```
      4. 建議將部署步驟放在型別檢查與 build 成功之後。
      5. 每次 push/PR 合併後，CI 會自動部署至 Vercel。
@@ -60,6 +60,13 @@ Nuxt 3 應用部署到 Vercel 的需求與注意事項
 - SSR hydration error（Pinia）：請確保 store state 為純物件
 - 靜態資源路徑錯誤：請用 `/public/` 目錄，路徑用 `/` 開頭
 - Vercel 預設 node 版本不符：可在專案根目錄加 `.nvmrc` 或在 Vercel 設定 node 版本
+- Vercel CLI 部署時出現 `requires confirmation. Use option "--yes" to confirm.`：
+  - 解法：在 workflow deploy 步驟加上 `--yes` 參數，例如：
+    ```yaml
+    - name: Deploy to Vercel
+       run: npx vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
+    ```
+  - 這樣可自動確認並完成部署，不會卡在互動提示。
 
 ## 參考文件
 
