@@ -28,6 +28,10 @@
     "confirmUpdate": "確認更新？",
     "confirmDelete": "確認刪除 {name}？"
   },
+  "contact": {
+    "phone": "電話",
+    "email": "聯絡方式"
+  },
   "languages": {
     "tw": "繁體中文",
     "en": "English"

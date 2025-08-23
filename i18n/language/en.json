@@ -28,6 +28,10 @@
     "confirmUpdate": "Confirm update?",
     "confirmDelete": "Confirm delete {name}?"
   },
+  "contact": {
+    "phone": "Phone",
+    "email": "Contact"
+  },
   "languages": {
     "tw": "繁體中文",
     "en": "English"

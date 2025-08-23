@@ -45,9 +45,12 @@
         <EBtn color="error" @click="onDialogConfirm">{{ $t('action.confirm') }}</EBtn>
       </div>
     </dialog>
+    <!-- 電話聯絡方式已移至 footer -->
     <footer class="footer">
       <small>
-        &copy; 2025 hardanonymous &nbsp;|&nbsp; 聯絡方式：<a href="mailto:hard25670559@gmail.com">hard25670559@gmail.com</a>
+        &copy; 2025 hardanonymous &nbsp;|&nbsp; {{ $t('contact.email') }}：<a
+          href="mailto:hard25670559@gmail.com">hard25670559@gmail.com</a>
+        &nbsp;|&nbsp; {{ $t('contact.phone') }}：<a href="tel:+886912345678">0912-345-678</a>
         &nbsp;|&nbsp; <a href="https://github.com/hard25670559" target="_blank" rel="noopener">GitHub</a>
       </small>
     </footer>
