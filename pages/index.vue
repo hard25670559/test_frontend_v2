@@ -17,7 +17,7 @@
       <div class="actions">
         <EBtn color="primary" @click="onSubmit">{{
           editId ? $t('action.update') : $t('action.create')
-        }}</EBtn>
+          }}</EBtn>
         <EBtn color="warn" @click="resetForm">{{ $t('action.reset') }}</EBtn>
       </div>
     </section>
@@ -50,7 +50,6 @@
       <small>
         &copy; 2025 hardanonymous &nbsp;|&nbsp; {{ $t('contact.email') }}：<a
           href="mailto:hard25670559@gmail.com">hard25670559@gmail.com</a>
-        &nbsp;|&nbsp; {{ $t('contact.phone') }}：<a href="tel:+886912345678">0912-345-678</a>
         &nbsp;|&nbsp; <a href="https://github.com/hard25670559" target="_blank" rel="noopener">GitHub</a>
       </small>
     </footer>
